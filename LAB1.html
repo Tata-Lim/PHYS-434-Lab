@@ -8048,7 +8048,7 @@ $$\int_{x=1254}^{\infty} P(x) dx = 1 - \int_{x=0}^{1254} P(x) dx$$</p>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">measure</span><span class="o">=</span><span class="mi">1250</span>
-<span class="n">CDF</span><span class="o">=</span><span class="mi">1</span><span class="o">-</span><span class="n">stats</span><span class="o">.</span><span class="n">gamma</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">measure</span><span class="p">,</span><span class="n">a</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">loc</span><span class="o">=</span><span class="n">mid</span><span class="p">,</span><span class="n">scale</span><span class="o">=</span><span class="n">std</span><span class="p">)</span>
+<span class="n">CDF</span><span class="o">=</span><span class="n">stats</span><span class="o">.</span><span class="n">gamma</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">measure</span><span class="p">,</span><span class="n">a</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">loc</span><span class="o">=</span><span class="n">mid</span><span class="p">,</span><span class="n">scale</span><span class="o">=</span><span class="n">std</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="mi">1</span><span class="o">-</span><span class="n">CDF</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8140,7 +8140,7 @@ $$\int_{x=1254}^{\infty} P(x) dx = 1 - \int_{x=0}^{1254} P(x) dx$$</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">sig</span><span class="o">=</span><span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">CDF</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">sig</span><span class="o">=</span><span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="n">CDF</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The equivalent sigma is </span><span class="si">{</span><span class="n">sig</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
